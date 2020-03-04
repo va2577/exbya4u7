@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+}
+div {
+  height: 50vh;
+}
+#container,
+#container2 {
+  border-bottom: #333333 solid 1px;
+}
+#container,
+#container3 {
+  border-right: #333333 solid 1px;
+}

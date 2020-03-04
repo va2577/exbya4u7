@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{symbol}}</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet" type="text/css"> -->
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+    <link href="/static/favicon.png" rel="shortcut icon" type="image/png">
+  </head>
+  <body>
+    <main>
+      <div id="container"></div>
+      <div id="container2"></div>
+      <div id="container3"></div>
+      <div id="container4"></div>
+    </main>
+    <script src="/static/highstock.js"></script>
+    <script src="/static/indicators.js"></script>
+    <script src="/static/theme.js"></script>
+    <script src="/static/script.js"></script>
+    <script>
+      const values = [
+        { 'container': 'container', 'url': '{{path}}?symbol={{symbol}}&timeframe=daily', 'title': '{{symbol}}', 'subtitle': 'daily' },
+        { 'container': 'container2', 'url': '{{path}}?symbol={{symbol}}&timeframe=4h', 'title': '{{symbol}}', 'subtitle': '4h' },
+        { 'container': 'container3', 'url': '{{path}}?symbol={{symbol}}&timeframe=1h', 'title': '{{symbol}}', 'subtitle': '1h' },
+        { 'container': 'container4', 'url': '{{path}}?symbol={{symbol}}&timeframe=15m', 'title': '{{symbol}}', 'subtitle': '15m' },
+      ]
+    </script>
+  </body>
+</html>
