@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         type: 'sma',
-        color: 'rgba(255, 159, 9, 0.8)', // 'rgb(255, 205, 86)',
+        color: 'rgb(255, 205, 86)',
         lineWidth: 0.4,
         linkedTo: 'candlestick',
         marker: {

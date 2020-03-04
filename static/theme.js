@@ -4,7 +4,7 @@ const tooltipY = document.querySelector('#container').offsetHeight
 const yAxisLabelsX = document.querySelector('#container').offsetWidth * -1 + offset
 Highcharts.theme = {
   chart: {
-    backgroundColor: "rgb(1, 15, 41)", // "#000000",
+    backgroundColor: "#000000",
     // borderColor: "#ffffff",
     // borderWidth: 1,
     marginBottom: 24,
@@ -12,7 +12,7 @@ Highcharts.theme = {
     marginRight: 2,
     marginTop: 0,
     style: {
-      fontFamily: '"American Typewriter", \'Unica One\', sans-serif',
+      fontFamily: '\'Unica One\', sans-serif',
     },
   },
   credits: {
@@ -20,14 +20,14 @@ Highcharts.theme = {
   },
   plotOptions: {
     candlestick: {
-      color: 'rgba(255, 69, 58, 0.4)', // '#FF6384', // '#845dde', // '#e85f82', // '#aa0000',
+      color: '#FF6384', // '#845dde', // '#e85f82', // '#aa0000',
       dataGrouping: {
         enabled: false,
       },
-      lineColor: 'rgba(255, 69, 58, 0.8)', // '#FF83A4', // '#946dee', // '#f86f92', // '#ff4444',
+      lineColor: '#FF83A4', // '#946dee', // '#f86f92', // '#ff4444',
       lineWidth: 0.4,
-      upColor: 'rgba(10, 132, 255, 0.4)', // '#36A2EB', // '#1893fb', // '#0000aa',
-      upLineColor: 'rgba(10, 132, 255, 0.8)', // '#56C2EB', // '#28a3ff', // '#4444ff',
+      upColor: '#36A2EB', // '#1893fb', // '#0000aa',
+      upLineColor: '#56C2EB', // '#28a3ff', // '#4444ff',
     },
   },
   navigator: {
