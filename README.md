@@ -69,3 +69,56 @@ env FLASK_APP=mtf.py flask run
 ```
 
 http://127.0.0.1:5000/static/fullscreen.html
+
+### app.runとflask run
+
+Flaskを実行する方法について、２通りの方法を見る。
+
+> For example, here is a valid "Hello, world!" web application with Flask:
+>
+>     from flask import Flask
+>     app = Flask(__name__)
+>     
+>     
+>     @app.route('/')
+>     def hello_world():
+>         return 'Hello, World!'
+>     
+>     if __name__ == '__main__':
+>         app.run()
+>
+> The above code shows "Hello, World!" on localhost port 5000 in a web browser when run with the `python app`. py command and the Flask library installed.
+>
+> <cite>[Flask - Full Stack Python](https://www.fullstackpython.com/flask.html)</cite>
+
+こういうのと
+
+> A Simple Example
+>
+>     from flask import Flask
+>     
+>     app = Flask(__name__)
+>     
+>     @app.route("/")
+>     def hello():
+>         return "Hello, World!"
+>
+> .
+>
+>     $ env FLASK_APP=hello.py flask run
+>      * Serving Flask app "hello"
+>      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+>
+> <cite>[Flask · PyPI](https://pypi.org/project/Flask/)</cite>
+
+こういうの。
+
+どちらがいいの？
+
+ドキュメントに書いてあった。
+
+> It is not recommended to use this function for development with automatic reloading as this is badly supported. Instead you should be using the flask command line script’s run support.
+>
+> <cite>[API — Flask Documentation (1.1.x)](https://flask.palletsprojects.com/en/1.1.x/api/?highlight=run#flask.Flask.run)</cite>
+
+.pyファイルの中でapp.runするのは推奨されていないようだ。
